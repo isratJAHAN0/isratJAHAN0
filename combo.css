@@ -1,0 +1,124 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    margin: 10px;
+    margin-left: 80px;
+}
+.link{
+    padding: 5px;
+    margin-top: 50px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black; 
+    padding-right: 20px;
+  
+    
+}
+a:hover{
+    color: red;
+}
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    color: brown;
+    font-size: xx-large;
+    display: block;
+    margin: 30px;
+    margin-right: 100px;
+}
+
+@media(max-width:768px){
+    .link{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menu-toggle:checked + .menu-icon + .link{
+        display: flex;
+    }
+}
+@media(min-width:768px){
+    .menu-icon{
+        display: none;
+    }
+}
+.hero{
+    padding: 50px;
+    margin-top: 20px;
+    text-align: center;
+.hero h1{
+    margin-bottom: 300px;
+}
+#join{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+#join:hover{
+    background-color: white;
+    color: red;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid red;
+}
+.shop{
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    margin-right: 5px;
+}
+.shop:hover{
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 20px;
+}
+.shopping{
+    text-align: center;
+    display: grid;
+    padding: 60px;
+    grid-template-columns: repeat(3,1fr);
+}
+@media(max-width:768px){
+    .shopping{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:500px){
+    .shopping{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.button{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    padding: 13px;
+}
+.our{
+    margin-top: 20px;
+    text-align: center;
+    color: red;
+}
+.shop p{
+    margin-bottom: 40px;
+}
+}
